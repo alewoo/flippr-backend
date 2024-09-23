@@ -1,31 +1,53 @@
-Flippr - Personalized Book Recommendation App
+# Flippr – Personalized Book Recommendation App
 
-Introduction
-Flippr is a mobile app designed to help users discover books tailored to their preferences. It allows users to swipe through book recommendations, like or skip books, and receive more personalized suggestions based on their interactions and reading preferences. Powered by AI, Flippr analyzes user data to make more accurate book suggestions and enhance the reading discovery process.
+**Devpost Link**: [Flippr on Devpost](https://devpost.com/software/flippr-8dm5xc)
+**Backend Github Link**: ([https://devpost.com/software/flippr-8dm5xc](https://github.com/alewoo/flippr-backend](https://github.com/alewoo/flippr)))
 
-Technologies Used
+## Introduction
 
-Frontend:
-React Native: A framework for building mobile apps using JavaScript and React.
-Expo: A framework and platform for universal React applications, used for quick mobile app development.
+Flippr is a mobile app designed to help users discover books tailored to their preferences. The app lets users swipe through book recommendations, like or skip books, and receive personalized suggestions based on their interactions and reading habits.
 
-Backend:
-Node.js: JavaScript runtime environment used for the backend.
-Express.js: A minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
-MongoDB: A NoSQL database used for storing user data, liked books, and preferences.
+Leveraging AI, Flippr analyzes user data to deliver accurate book suggestions, enhancing the reading discovery process. The app's main features include AI-powered recommendations, seamless book browsing, and a user-friendly swiping interface.
 
-AI Integration:
-OpenAI GPT-4: Used to analyze user-liked books and infer their reading preferences for more tailored book recommendations.
-APIs Used
+## Technologies Used
 
-OpenLibrary API
-OpenLibrary Search API: Used to fetch book details and covers for recommendations within the app including things like cover and title.
+### Frontend:
+- **React Native**: For building the mobile app interface.
+- **Expo**: A platform for rapid development and deployment of React Native apps.
 
-Features
-User Registration/Login: Secure user authentication using JWT.
-Personalized Book Recommendations: Books tailored to the user’s preferences and interactions.
-AI-Backed Interest Inference: AI analyses the user’s liked books to fine-tune future recommendations.
-Swipe to Like/Dislike: Users can swipe to like or skip books.
-View Liked Books: Users can view all their liked books in a separate section.
-Custom Onboarding Questionnaire: Users fill out a reading preferences questionnaire during onboarding to start receiving personalized recommendations.
-More Info on Book Page: Click on the book title to get more info including title, author, and a summary
+### Backend:
+- **Node.js**: Provides the runtime environment for the server-side logic.
+- **Express.js**: A minimalist framework for building robust web and mobile applications.
+- **MongoDB**: NoSQL database used to store user data, book interactions, and preferences.
+
+### AI Integration:
+- **OpenAI GPT-4**: Analyzes user interactions (liked books, skipped books) to infer reading preferences and provide personalized book recommendations.
+
+### APIs Used:
+- **OpenLibrary Search API**: Fetches book details (cover, title, author) for recommendations displayed in the app.
+
+## Key Features
+
+- **User Authentication**: Secure user login and registration, implemented using JWT (JSON Web Tokens).
+- **Personalized Recommendations**: AI-backed suggestions based on users' preferences and interactions with books.
+- **Interest Inference**: AI analyzes liked and disliked books to fine-tune future recommendations.
+- **Swipe to Like/Dislike**: Users can swipe to like or skip book recommendations.
+- **View Liked Books**: Users can view all their liked books in a separate section of the app.
+- **Custom Onboarding**: Users fill out a reading preferences questionnaire during onboarding for better personalized recommendations.
+- **Detailed Book Info**: Users can click on a book title to view more information such as the author, title, and a brief summary.
+
+## How It Works
+
+1. **User Onboarding**: Upon first use, users fill out a brief questionnaire about their reading habits and preferences.
+2. **Swipe to Discover**: Users swipe through book recommendations—right for "like," left for "skip."
+3. **Tailored Suggestions**: The AI refines recommendations over time, learning from user interactions.
+4. **Explore Liked Books**: Users can view their liked books in a dedicated section of the app.
+
+## More Information
+
+- **Book Details**: Click on a book to get more information, including the title, author, and a summary.
+- **Data Storage**: All user preferences, interactions, and book data are stored securely in MongoDB.
+
+## Contact
+
+For more information or to contribute, visit the [Devpost project page](https://devpost.com/software/flippr-8dm5xc).
